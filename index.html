@@ -925,7 +925,239 @@
                     </div>
                     <div class="elementor-element elementor-element-a8d6085 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="a8d6085" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
-                <p class="elementor-heading-title elementor-size-default">Favor de confirmar antes del 15/05/24 
+                <form>
+
+
+
+        <p class="elementor-heading-title elementor-size-default"><label for="name"></label>Por favor, ingresa los apellidos por FAMILIA. En caso de ser soltero/a, indique su Nombre y Apellido:</label><br></p> 
+   <p><input type="text" id="name" name="name"><br></p>
+  <p id="message"></p>
+</form>
+    
+
+
+
+<script>
+    var reference = [
+      ["Proaño Anchundia", 3, "integrantes"],
+      ["Proaño anchundia", 3, "integrantes"],
+      ["proaño anchundia", 3, "integrantes"],
+      ["PROAÑO ANCHUNDIA", 3, "integrantes"],
+
+      ["Carrera Véliz", 5, "integrantes"],
+      ["Carrera Veliz", 5, "integrantes"],
+      ["Carrera veliz", 5, "integrantes"],
+      ["carrera veliz", 5, "integrantes"],
+      ["carrera véliz", 5, "integrantes"],
+      ["CARRERA VELIZ", 5, "integrantes"],
+      ["CARRERA VÉLIZ", 5, "integrantes"],
+
+      ["Alvarado Veliz", 5, "integrantes"],
+      ["Alvarado Véliz", 5, "integrantes"],
+      ["alvarado veliz", 5, "integrantes"],
+      ["alvarado véliz", 5, "integrantes"],
+      ["AlVARADO VELIZ", 5, "integrantes"],
+      ["ALVARADO VÉLIZ", 5, "integrantes"],
+      ["Alvarado veliz", 5, "integrantes"],
+      ["Alvarado véliz", 5, "integrantes"],
+
+      ["Santiago Veliz", 0, "acompañante"],
+      ["Santiago Véliz", 0, "acompañante"],
+      ["Santiago veliz", 0, "acompañante"],
+      ["Santiago véliz", 0, "acompañante"],
+      ["santiago veliz", 0, "acompañante"],
+      ["santiago véliz", 0, "acompañante"],
+
+      ["Carlos Quijije", 0, "acompañante"],
+      ["Carlos quijije", 0, "acompañante"],
+      ["carlos quijije", 0, "acompañante"],
+      ["CARLOS QUIJIJE", 0, "acompañante"],
+
+
+      ["Carla Pilaloa", 1, "acompañante"],
+      ["Carla pilaloa", 1, "acompañante"],
+      ["carla pilaloa", 1, "acompañante"],
+      ["CARLA PILALOA", 1, "acompañante"],
+      
+
+      ["Gabriela Noboa", 1, "acompañante"],
+      ["Gabriela noboa", 1, "acompañante"],
+      ["gabriela noboa", 1, "acompañante"],
+      ["GABRIELA NOBOA", 1, "acompañante"],
+      
+
+      ["Byron Veliz", 0, "acompañante"],
+      ["Byron Véliz", 0, "acompañante"],
+      ["Byron veliz", 0, "acompañante"],
+      ["Byron véliz", 0, "acompañante"],
+      ["byron veliz", 0, "acompañante"],
+      ["byron véliz", 0, "acompañante"],
+      ["BYRON VÉLIZ", 0, "acompañante"],
+      ["BYRON VELIZ", 0, "acompañante"],
+
+      
+
+      ["Indio Magallanes", 3, "integrantes"],
+      ["Indio magallanes", 3, "integrantes"],
+      ["indio magallanes", 3, "integrantes"],
+      ["INDIO MAGALLANES", 3, "integrantes"],
+
+
+      ["Indio Carpio", 3, "integrantes"],
+      ["Indio carpio", 3, "integrantes"],
+      ["indio carpio", 3, "integrantes"],
+      ["INDIO CARPIO", 3, "integrantes"],
+
+
+      ["Torres Guerra", 2, "integrantes"],
+      ["Torres guerra", 2, "integrantes"],
+      ["torres guerra", 2, "integrantes"],
+      ["TORRES GUERRA", 2, "integrantes"],
+
+
+
+      ["Tumbaco Cedeño", 2, "integrantes"],
+      ["Tumbaco cedeño", 2, "integrantes"],
+      ["tumbaco cedeño", 2, "integrantes"],
+      ["TUMBACO CEDEÑO", 2, "integrantes"],
+     
+
+
+      ["Espinoza Cruz", 2, "integrantes"],
+      ["Espinoza cruz", 2, "integrantes"],
+      ["espinoza cruz", 2, "integrantes"],
+      ["ESPINOZA CRUZ", 2, "integrantes"],
+
+
+      ["Ginger Pinto", 1, "acompañante"],
+      ["Ginger pinto", 1, "acompañante"],
+      ["ginger pinto", 1, "acompañante"],
+      ["GINGER PINTO", 1, "acompañante"],
+      
+
+      ["Vanessa Pilligua", 1, "acompañante"],
+      ["Vanessa pilligua", 1, "acompañante"],
+      ["vanessa pilligua", 1, "acompañante"],
+      ["VANESSA PILLIGUA", 1, "acompañante"],
+
+      ["Chamba Carpio", 3, "integrantes"],
+      ["Chamba carpio", 3, "integrantes"],
+      ["chamba carpio", 3, "integrantes"],
+      ["CHAMBA CARPIO", 3, "integrantes"],
+
+
+      ["Alba Carpio Ortiz", 1, "acompañante"],
+      ["Alba carpio ortiz", 1, "acompañante"],
+      ["alba carpio ortiz", 1, "acompañante"],
+      ["ALBA CARPIO ORTIZ", 1, "acompañante"],
+
+
+
+      ["Alba Carpio", 1, "acompañante"],
+      ["Alba carpio", 1, "acompañante"],
+      ["alba carpio", 1, "acompañante"],
+      ["ALBA CARPIO", 1, "acompañante"],
+
+
+      ["Vilica Burgos", 2, "integrantes"],
+      ["Vilica burgos", 2, "integrantes"],
+      ["vilica burgos", 2, "integrantes"],
+      ["VILICA BURGOS", 2, "integrantes"],
+
+
+
+      ["Espinoza Carpio", 2, "integrantes"],
+      ["Espinoza carpio", 2, "integrantes"],
+      ["espinoza carpio", 2, "integrantes"],
+      ["ESPINOZA CARPIO", 2, "integrantes"],
+
+
+      ["Salazar Carpio", 2, "integrantes"],
+      ["Salazar carpio", 2, "integrantes"],
+      ["salazar carpio", 2, "integrantes"],
+      ["SALAZAR CARPIO", 2, "integrantes"],
+
+      
+      ["Paredes Quijije", 4, "integrantes"],
+      ["Paredes quijije", 4, "integrantes"],
+      ["paredes quijije", 4, "integrantes"],
+      ["PAREDES QUIJIJE", 4, "integrantes"],
+
+
+      ["Carcelen Quijije", 4, "integrantes"],
+      ["Carcelen quijije", 4, "integrantes"],
+      ["carcelen quijije", 4, "integrantes"],
+      ["CARCELEN QUIJIJE", 4, "integrantes"],
+
+
+      ["Leon Quijije", 2, "integrantes"],
+      ["Leon quijije", 2, "integrantes"],
+      ["leon quijije", 2, "integrantes"],
+      ["LEON QUIJIJE", 2, "integrantes"],
+      ["León Quijije", 2, "integrantes"],
+      ["León quijije", 2, "integrantes"],
+
+
+      ["Alejandro Quijije", 1, "acompañante"],
+      ["Alejandro quijije", 1, "acompañante"],
+      ["alejandro quijije", 1, "acompañante"],
+      ["ALEJANDRO QUIJIJE", 1, "acompañante"],
+
+
+
+      ["Carcelen Panchana", 2, "integrantes"],
+      ["Carcelen panchana", 2, "integrantes"],
+      ["carcelen panchana", 2, "integrantes"],
+      ["CARCELEN PANCHANA", 2, "integrantes"],
+
+
+
+      ["Carcelen Velasquez", 2, "integrantes"],
+      ["Carcelen velasquez", 2, "integrantes"],
+      ["carcelen velasquez", 2, "integrantes"],
+      ["CARCELEN VELASQUEZ", 2, "integrantes"],
+      ["Carcelen velásquez", 2, "integrantes"],
+      ["Carcelen Velásquez", 2, "integrantes"],
+      ["carcelen velásquez", 2, "integrantes"],
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    ];
+
+
+
+    
+  
+    function displayMessage(event) {
+    event.preventDefault();
+    var name = document.getElementById("name").value;
+    for (var i = 0; i < reference.length; i++) {
+        if (reference[i][0] === name) {
+        var numberText = "";
+        if (name === "Proaño Anchundia" || name === "Proaño anchundia" || name === "proaño anchundia" || name === "PROAÑO ANCHUNDIA" || name === "Carrera Veliz" || name === "Carrera Véliz" || name === "Carrera veliz"|| name === "carrera veliz"|| name === "carrera véliz"|| name === "CARRERA VELIZ"|| name === "CARRERA VÉLIZ"|| name === "Alvarado Veliz"|| name === "Alvarado Véliz" || name === "alvarado véliz" || name === "alvarado veliz" || name === "ALVARADO VELIZ" || name === "ALVARADO VÉLIZ" || name === "Alvarado véliz" || name === "Alvarado veliz" || name === "Indio Magallanes" || name === "Indio magallanes" || name === "indio magallanes" || name === "INDIO MAGALLANES" || name === "Indio Carpio" || name === "Indio carpio" || name === "indio carpio" || name === "INDIO CARPIO" || name === "Torres Guerra" || name === "Torres guerra" || name === "torres guerra" || name === "TORRES GUERRA" || name === "Tumbaco Cedeño" || name === "Tumbaco cedeño" || name === "tumbaco cedeño" || name === "TUMBACO CEDEÑO" || name === "Espinoza Cruz" || name === "Espinoza cruz" || name === "espinoza cruz" || name === "ESPINOZA CRUZ" || name === "Chamba Carpio" || name === "Chamba carpio" || name === "chamba carpio" || name === "CHAMBA CARPIO" || name === "Vilica Burgos" || name === "Vilica burgos" || name === "vilica burgos" || name === "VILICA BURGOS" || name === "Espinoza Carpio" || name === "Espinoza carpio" || name === "espinoza carpio" || name === "ESPINOZA CARPIO" || name === "Salazar Carpio" || name === "Salazar carpio"|| name === "salazar carpio" || name === "SALAZAR CARPIO" || name === "Paredes Quijije" || name === "Paredes quijije" || name === "paredes quijije" || name === "PAREDES QUIJIJE" || name === "Carcelen Quijije" || name === "Carcelen quijije" || name === "carcelen quijije" || name === "CARCELEN QUIJIJE" || name === "Leon Quijije" || name === "Leon quijije" || name === "leon quijije" || name === "LEON QUIJIJE" || name === "León Quijije" || name === "León quijije" || name === "Carcelen Panchana" || name === "Carcelen panchana" || name === "carcelen panchana" || name === "CARCELEN PANCHANA" || name === "Carcelen Velasquez" || name === "Carcelen velasquez" || name === "carcelen velasquez" || name === "CARCELEN VELASQUEZ" || name === "Carcelen Velásquez" || name === "carcelen velásquez" || name === "Carcelen velásquez") {
+          numberText = "Número de integrantes admitidos: " + reference[i][1] + " " + reference[i][2];
+        }
+        else if (name === "Santiago Veliz" || name === "Santiago Véliz" || name === "Santiago veliz" || name === "Santiago véliz" || name === "santiago veliz" || name === "santiago véliz" || name === "Carlos Quijije" || name === "Carlos quijije" || name === "carlos quijije" || name === "CARLOS QUIJIJE" || name === "Carla Pilaloa" || name === "Carla pilaloa" || name === "carla pilaloa" || name === "CARLA PILALOA" || name === "Gabriela Noboa" || name === "Gabriela noboa" || name === "gabriela noboa" || name === "GABRIELA NOBOA" || name === "Byron Veliz" || name === "Byron Véliz" || name === "Byron veliz" || name === "Byron véliz" || name === "byron veliz" || name === "byron véliz" || name === "BYRON VELIZ" || name === "BYRON VÉLIZ" || name === "Ginger Pinto" || name === "Ginger pinto" || name === "ginger pinto" || name === "GINGER PINTO" || name === "Vanessa Pilligua" || name === "Vanessa pilligua" || name === "vanessa pilligua" || name === "VANESSA PILLIGUA" || name === "Alba Carpio Ortiz" || name === "Alba carpio ortiz" || name === "alba carpio ortiz" || name === "ALBA CARPIO ORTIZ" || name === "Alba Carpio" || name === "Alba carpio" || name === "alba carpio" || name === "ALBA CARPIO" || name === "Alejandro Quijije" || name === "Alejandro quijije" || name === "alejandro quijije" || name === "ALEJANDRO QUIJIJE") {
+          numberText = "Número de acompañantes admitidos: " + reference[i][1];
+        }
+        document.getElementById("message").innerHTML = "Name: " + name + "<br>" +
+          numberText + "<br>";
+        return;
+      }
+    }
+    document.getElementById("message").innerHTML = "Name not found in the table.";
+  }
+
+  document.getElementById("name").oninput = function(e) {
+    displayMessage(e);
+  }
+</script>
     
     
      </p>		</div>
